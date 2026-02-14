@@ -3,242 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorrident | Dra. [Nome] - Implantodontia e Estética</title>
-
+    <title>Dr. [Nome] - Implantodontia e Estética Dental em São Paulo</title>
+    <meta name="description" content="Clínica de odontologia de alta performance em São Paulo. Implantes, estética dental e periodontia com tecnologia de ponta nos Jardins.">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome 6 (Free) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- AOS Library (Animate on Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Nosso CSS -->
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header Fixo -->
-    <header class="header">
-        <div class="container header-grid">
+    
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container header-content">
             <div class="logo">
-                <img src="https://placehold.co/200x50/0A2F44/FFFFFF?text=Sorrident" alt="Sorrident Logo">
+                <i class="fa-solid fa-tooth"></i>
+                <span>DR. [NOME]</span>
             </div>
             <nav class="nav-menu" id="navMenu">
-                <ul class="nav-list">
-                    <li><a href="#hero" class="nav-link">Início</a></li>
-                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
-                    <li><a href="#depoimentos" class="nav-link">Resultados</a></li>
-                    <li><a href="#contato" class="nav-link">Contato</a></li>
-                </ul>
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#especialidades" class="nav-link">Especialidades</a>
+                <a href="#resultados" class="nav-link">Resultados</a>
+                <a href="#contato" class="nav-link">Contato</a>
             </nav>
-            <div class="header-whatsapp">
+            <a href="https://wa.me/5511999999999?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="header-contact" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
-                <a href="https://wa.me/5511999999999?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank">(11) 99999-9999</a>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
-                <i class="fas fa-bars" id="menuIcon"></i>
+                <span>(11) 99999-9999</span>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="container hero-grid">
-                <div class="hero-content" data-aos="fade-right">
-                    <h4 class="hero-subtitle"><span>Dra. [Nome] - CRO-SP 123456</span></h4>
-                    <h1 class="hero-title">Implantodontia e Estética em São Paulo: <span class="highlight">Precisão que Devolve Sorrisos.</span></h1>
-                    <p class="hero-text">Atendimento personalizado em nosso consultório nos Jardins. Tecnologia de ponta para procedimentos seguros, confortáveis e com resultados naturais.</p>
-                    <div class="hero-buttons">
-                        <a href="https://wa.me/5511999999999?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="btn btn-primary" target="_blank">Agendar Consulta</a>
-                        <a href="#sobre" class="btn btn-secondary">Conheça a Equipe</a>
-                    </div>
-                </div>
-                <div class="hero-image" data-aos="fade-left" data-aos-delay="100">
-                    <img src="https://placehold.co/800x900/1E1E1E/FFFFFF?text=Dentista+SP" alt="Dra. [Nome] em seu consultório nos Jardins">
-                </div>
-            </div>
-        </section>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="close-menu" id="closeMenu">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            <nav class="mobile-nav">
+                <a href="#inicio" class="mobile-nav-link">Início</a>
+                <a href="#sobre" class="mobile-nav-link">Sobre</a>
+                <a href="#especialidades" class="mobile-nav-link">Especialidades</a>
+                <a href="#resultados" class="mobile-nav-link">Resultados</a>
+                <a href="#contato" class="mobile-nav-link">Contato</a>
+                <a href="https://wa.me/5511999999999?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="mobile-nav-link whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> (11) 99999-9999
+                </a>
+            </nav>
+        </div>
+        <div class="mobile-menu-overlay"></div>
+    </div>
 
-        <!-- Diferenciais -->
-        <section id="diferenciais" class="diferenciais">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Tecnologia e Expertise a Serviço do seu Sorriso</h2>
-                <div class="cards-grid">
-                    <div class="card" data-aos="zoom-in" data-aos-delay="50">
-                        <i class="fa-solid fa-microscope card-icon"></i>
-                        <h3 class="card-title">Diagnóstico Digital</h3>
-                        <p class="card-text">Scanner intraoral e tomografia computadorizada para um planejamento preciso e previsível.</p>
-                    </div>
-                    <div class="card" data-aos="zoom-in" data-aos-delay="150">
-                        <i class="fa-solid fa-tooth card-icon"></i>
-                        <h3 class="card-title">Materiais de Alta Performance</h3>
-                        <p class="card-text">Utilizamos apenas próteses e ligas de titânio de grau cirúrgico das melhores marcas do mundo.</p>
-                    </div>
-                    <div class="card" data-aos="zoom-in" data-aos-delay="250">
-                        <i class="fa-regular fa-calendar-check card-icon"></i>
-                        <h3 class="card-title">Acompanhamento Humanizado</h3>
-                        <p class="card-text">Da primeira consulta ao pós-operatório, você terá suporte direto da nossa equipe.</p>
-                    </div>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <h4 class="hero-subtitle">DR. [NOME] - CRO-SP 123456</h4>
+                <h1 class="hero-title">
+                    Implantodontia e Estética em São Paulo: <span class="title-highlight">Precisão que Devolve Sorrisos.</span>
+                </h1>
+                <p class="hero-text">
+                    Atendimento personalizado em nosso consultório nos Jardins. Tecnologia de ponta para procedimentos seguros, confortáveis e com resultados naturais.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5511999999999?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="btn btn-primary" target="_blank">Agendar Consulta</a>
+                    <a href="#sobre" class="btn btn-secondary">Conheça a Equipe</a>
                 </div>
             </div>
-        </section>
-
-        <!-- Sobre o Profissional -->
-        <section id="sobre" class="sobre">
-            <div class="container sobre-grid">
-                <div class="sobre-image" data-aos="fade-right">
-                    <img src="https://placehold.co/700x800/0A2F44/FFFFFF?text=Procedimento" alt="Dra. [Nome] em procedimento">
-                </div>
-                <div class="sobre-content" data-aos="fade-left">
-                    <h2 class="section-title left-align">Dra. [Nome] | Cirurgião-Dentista</h2>
-                    <h4 class="sobre-subtitle"><span>Especialista em Implantodontia (CRO-SP XXX)</span></h4>
-                    <p class="sobre-text">Com mais de 15 anos de experiência na odontologia paulistana, a Dra. [Nome] combina técnica cirúrgica avançada com um olhar estético apurado. Membro da [Sociedade Brasileira de Implantodontia], acredita que um tratamento de sucesso nasce da confiança entre profissional e paciente.</p>
-                    <ul class="sobre-list">
-                        <li><i class="fa-solid fa-graduation-cap"></i> Mestre em Periodontia pela USP.</li>
-                        <li><i class="fa-solid fa-award"></i> Especialização em Prótese Dentária.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Especialidades -->
-        <section id="especialidades" class="especialidades">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Soluções Completas para sua Saúde Bucal</h2>
-                <div class="cards-grid">
-                    <div class="card" data-aos="flip-up" data-aos-delay="50">
-                        <i class="fa-solid fa-tooth card-icon"></i>
-                        <h4>Implantes Dentários</h4>
-                        <p class="card-text">Reabilitação total ou unitária com segurança e naturalidade.</p>
-                    </div>
-                    <div class="card" data-aos="flip-up" data-aos-delay="100">
-                        <i class="fa-regular fa-star card-icon"></i>
-                        <h4>Lentes de Contato</h4>
-                        <p class="card-text">Transformação estética com mínimo desgaste dental.</p>
-                    </div>
-                    <div class="card" data-aos="flip-up" data-aos-delay="150">
-                        <i class="fa-solid fa-syringe card-icon"></i>
-                        <h4>Harmonização Orofacial</h4>
-                        <p class="card-text">Procedimentos estéticos com foco na proporção e saúde.</p>
-                    </div>
-                    <div class="card" data-aos="flip-up" data-aos-delay="200">
-                        <i class="fa-solid fa-lightbulb card-icon"></i>
-                        <h4>Clareamento a Laser</h4>
-                        <p class="card-text">Técnica avançada para um sorriso mais branco e radiante.</p>
-                    </div>
-                    <div class="card" data-aos="flip-up" data-aos-delay="250">
-                        <i class="fa-solid fa-shield-halved card-icon"></i>
-                        <h4>Periodontia</h4>
-                        <p class="card-text">Prevenção e tratamento de doenças da gengiva.</p>
-                    </div>
-                    <div class="card" data-aos="flip-up" data-aos-delay="300">
-                        <i class="fa-solid fa-trowel-bricks card-icon"></i>
-                        <h4>Próteses</h4>
-                        <p class="card-text">Peças protéticas de alta durabilidade e estética.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Depoimentos -->
-        <section id="depoimentos" class="depoimentos">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">O que nossos pacientes dizem</h2>
-                <div class="carousel-container" data-aos="fade-up" data-aos-delay="150">
-                    <div class="carousel-track" id="carouselTrack">
-                        <!-- Depoimento 1 -->
-                        <div class="carousel-slide">
-                            <div class="depoimento-card">
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="depoimento-texto">"A Dra. [Nome] é extremamente cuidadosa. Fiz um implante e o processo foi muito tranquilo, sem dor alguma. O consultório é impecável e a localização é ótima."</p>
-                                <p class="depoimento-autor">- Maria Clara S.</p>
-                            </div>
-                        </div>
-                        <!-- Depoimento 2 -->
-                        <div class="carousel-slide">
-                            <div class="depoimento-card">
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="depoimento-texto">"Excelente profissional! Além do conhecimento técnico, tem uma sensibilidade incrível para entender o que o paciente deseja. Recomendo de olhos fechados."</p>
-                                <p class="depoimento-autor">- João P.</p>
-                            </div>
-                        </div>
-                        <!-- Depoimento 3 -->
-                        <div class="carousel-slide">
-                            <div class="depoimento-card">
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="depoimento-texto">"Fiz a harmonização orofacial e fiquei muito satisfeita com o resultado. Ambiente acolhedor e explicação detalhada de cada etapa. Nota 10!"</p>
-                                <p class="depoimento-autor">- Ana Beatriz L.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Controles do Carrossel -->
-                    <button class="carousel-btn prev" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
-                    <button class="carousel-btn next" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
-                    <div class="carousel-dots" id="carouselDots"></div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer / Contato -->
-    <footer id="contato" class="footer">
-        <div class="container footer-grid">
-            <div class="footer-info">
-                <h3>Venha nos conhecer.</h3>
-                <p><i class="fa-solid fa-location-dot"></i> R. Exemplo, 123 - Jardins, São Paulo - SP</p>
-                <p><i class="fa-solid fa-phone"></i> <a href="tel:+5511999999999">(11) 99999-9999</a></p>
-                <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5511999999999?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank">WhatsApp</a></p>
-                <!-- Mapa Simulado (poderia ser embed do Google Maps) -->
-                <div class="footer-mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197476928374!2d-46.6573411!3d-23.5613541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8d0b8d1c5%3A0x8f2b0a2f5a5f5b0!2sJardins%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-            <div class="footer-contato">
-                <h3>Fale Conosco</h3>
-                <form id="contactForm" class="contact-form">
-                    <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
-                    <span class="error-message" id="errorNome"></span>
-                    
-                    <input type="tel" name="telefone" id="telefone" placeholder="Seu WhatsApp" required>
-                    <span class="error-message" id="errorTelefone"></span>
-                    
-                    <textarea name="mensagem" id="mensagem" rows="4" placeholder="Sua mensagem (opcional)"></textarea>
-                    
-                    <button type="submit" class="btn btn-footer">Enviar Mensagem</button>
-                </form>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80" alt="Dr. [Nome] - Dentista Especialista">
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2023 Sorrident. Todos os direitos reservados.</p>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="diferenciais">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">Tecnologia e Expertise a Serviço do seu Sorriso</h2>
+            <div class="diferenciais-grid">
+                <div class="diferencial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="card-title">Diagnóstico Digital</h3>
+                    <p class="card-text">Scanner intraoral e tomografia computadorizada para um planejamento preciso e previsível.</p>
+                </div>
+
+                <div class="diferencial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="card-title">Materiais de Alta Performance</h3>
+                    <p class="card-text">Utilizamos apenas próteses e ligas de titânio de grau cirúrgico das melhores marcas do mundo.</p>
+                </div>
+
+                <div class="diferencial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </div>
+                    <h3 class="card-title">Acompanhamento Humanizado</h3>
+                    <p class="card-text">Da primeira consulta ao pós-operatório, você terá suporte direto da nossa equipe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Profissional -->
+    <section id="sobre" class="sobre">
+        <div class="container sobre-grid">
+            <div class="sobre-image" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80" alt="Procedimento odontológico de precisão">
+            </div>
+            <div class="sobre-content" data-aos="fade-left">
+                <h2 class="section-title-left">Dr. [Nome] | Cirurgião-Dentista</h2>
+                <h4 class="sobre-subtitle">Especialista em Implantodontia (CRO-SP XXX)</h4>
+                <p class="sobre-text">
+                    Com mais de 15 anos de experiência na odontologia paulistana, o Dr. [Nome] combina técnica cirúrgica avançada com um olhar estético apurado. Membro da Sociedade Brasileira de Implantodontia, acredita que um tratamento de sucesso nasce da confiança entre profissional e paciente.
+                </p>
+                <ul class="credentials-list">
+                    <li>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Mestre em Periodontia pela USP</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-award"></i>
+                        <span>Especialização em Prótese Dentária</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>Membro da Sociedade Brasileira de Implantodontia</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades" class="especialidades">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">Soluções Completas para sua Saúde Bucal</h2>
+            <div class="especialidades-grid">
+                <div class="especialidade-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h4 class="card-title">Implantes Dentários</h4>
+                    <p class="card-text">Reabilitação completa com implantes de titânio e carga imediata quando indicado.</p>
+                </div>
+
+                <div class="especialidade-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h4 class="card-title">Clareamento a Laser</h4>
+                    <p class="card-text">Tratamento moderno e seguro para um sorriso mais branco e radiante.</p>
+                </div>
+
+                <div class="especialidade-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-vial"></i>
+                    </div>
+                    <h4 class="card-title">Lentes de Contato</h4>
+                    <p class="card-text">Facetas ultrafinas de porcelana para transformação estética natural.</p>
+                </div>
+
+                <div class="especialidade-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="card-title">Próteses Dentárias</h4>
+                    <p class="card-text">Próteses fixas e removíveis com materiais de última geração.</p>
+                </div>
+
+                <div class="especialidade-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4 class="card-title">Periodontia</h4>
+                    <p class="card-text">Tratamento especializado das gengivas e estruturas de suporte dos dentes.</p>
+                </div>
+
+                <div class="especialidade-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h4 class="card-title">Harmonização Orofacial</h4>
+                    <p class="card-text">Procedimentos estéticos faciais para equilíbrio e harmonia do sorriso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="resultados" class="depoimentos">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">O que nossos pacientes dizem</h2>
+            <div class="swiper depoimentos-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="depoimento-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "O Dr. [Nome] é extremamente cuidadoso. Fiz um implante e o processo foi muito tranquilo, sem dor alguma. O consultório é impecável e a localização é ótima."
+                            </p>
+                            <h4 class="depoimento-autor">Maria Clara S.</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Profissional excepcional! A atenção aos detalhes e o cuidado com o paciente fazem toda a diferença. Meu clareamento ficou perfeito e muito natural."
+                            </p>
+                            <h4 class="depoimento-autor">Roberto Almeida</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="depoimento-text">
+                                "Fiz lentes de contato e o resultado superou minhas expectativas. O Dr. [Nome] entendeu exatamente o que eu queria e entregou um sorriso natural e harmonioso."
+                            </p>
+                            <h4 class="depoimento-autor">Juliana Santos</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização e Contato -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column" data-aos="fade-right">
+                    <h3 class="footer-title">Venha nos conhecer.</h3>
+                    <div class="footer-info">
+                        <p class="footer-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>R. Exemplo, 123 - Jardins<br>São Paulo - SP, 01234-000</span>
+                        </p>
+                        <p class="footer-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+5511999999999">(11) 99999-9999</a>
+                        </p>
+                        <p class="footer-item">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <a href="https://wa.me/5511999999999?text=Olá!%20Vi%20o%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank">WhatsApp: (11) 99999-9999</a>
+                        </p>
+                    </div>
+                    
+                    <div class="footer-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0977!2d-46.6693!3d-23.5613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzQwLjciUyA0NsKwNDAnMDkuNSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0; border-radius: 12px; margin-top: 30px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="footer-column" data-aos="fade-left">
+                    <h3 class="footer-title">Envie sua mensagem</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome *" required>
+                            <span class="error-message" id="nomeError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone/WhatsApp *" required>
+                            <span class="error-message" id="telefoneError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr. [Nome] - CRO-SP 123456. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <i class="fa-solid fa-check-circle"></i>
+            <h3>Mensagem enviada com sucesso!</h3>
+            <p>Entraremos em contato em breve.</p>
+            <button class="btn btn-primary" id="closeModal">Fechar</button>
+        </div>
+    </div>
+
     <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
